@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Healers with a conscience
+title: Queer Healers
 image: /img/botanical-close-up-color-1418329.jpg
 heading: Healers with a conscience
-subheading: Support Queer healers while caring for yourself
+subheading: Find healers who relate to your lived experience
 mainpitch:
   title: Why Queer Healers
   description: >-
