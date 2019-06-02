@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Healers with a conscience
-image: /img/home-jumbotron.jpg
+image: /img/botanical-close-up-color-1418329.jpg
 heading: Healers with a conscience
 subheading: Support Queer healers while caring for yourself
 mainpitch:
@@ -68,3 +68,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
