@@ -2,7 +2,7 @@ import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
 import TextInput from '../../components/FormComponents/TextInput'
-import TextInput from '../../components/FormComponents/FileUpload'
+import FileUpload from '../../components/FormComponents/FileUpload'
 
 function encode(data) {
   const formData = new FormData()
