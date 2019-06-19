@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+// import BlogRoll from '../components/BlogRoll'
 
 export const IndexPageTemplate = ({
   image,
@@ -89,13 +89,13 @@ export const IndexPageTemplate = ({
                 <Features gridItems={intro.blurbs} />
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
+                    <Link className="btn" to="/signUp/intake">
+                      Sign up as a provider
                     </Link>
                   </div>
                 </div>
                 <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
+              {/* <h3 className="has-text-weight-semibold is-size-2">
                     Latest stories
                   </h3>
                   <BlogRoll />
@@ -103,7 +103,7 @@ export const IndexPageTemplate = ({
                     <Link className="btn" to="/blog">
                       Read more
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
