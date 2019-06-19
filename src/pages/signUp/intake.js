@@ -1,8 +1,12 @@
+
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
 import TextInput from '../../components/FormComponents/TextInput'
 import FileUpload from '../../components/FormComponents/FileUpload'
+import CheckBoxes from '../../components/FormComponents/CheckBoxes'
+import Dropdown from '../../components/FormComponents/Dropdown'
+
 
 function encode(data) {
   const formData = new FormData()
@@ -12,7 +16,36 @@ function encode(data) {
   return formData
 }
 
-export default class Contact extends React.Component {
+const Pronouns = [
+  {
+    name: 'he-him',
+    key: 'heHim',
+    label: 'He/Him',
+  },
+  {
+    name: 'she-her',
+    key: 'sheHer',
+    label: 'She/Her',
+  },
+  {
+    name: 'they-them',
+    key: 'theyThem',
+    label: 'They/Them',
+  },
+];
+
+const Categories = [
+  {
+    name: 'bodyWork',
+    label: 'Body Work'
+  },
+  {
+    name: 'doulas',
+    label: 'Doula'
+  }
+]
+
+export default class Intake extends React.Component {
   constructor(props) {
     super(props)
     this.state = {}
@@ -27,6 +60,8 @@ export default class Contact extends React.Component {
   }
 
   handleSubmit = e => {
+    console.log(this.state);
+    console.log(e.target);
     e.preventDefault()
     const form = e.target
     fetch('/', {
@@ -46,7 +81,6 @@ export default class Contact extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1>File Upload</h1>
               <form
                 name="file-upload"
                 method="post"
@@ -68,6 +102,12 @@ export default class Contact extends React.Component {
                   label="First Name"
                   isRequired = {true}
                   handleChange = {this.handleChange}
+                />
+                <TextInput
+                id="middleName"
+                label="Middle Name"
+                isRequired = {false}
+                handleChange = {this.handleChange}
                 />
                 <TextInput
                   id="lastName"
@@ -105,6 +145,19 @@ export default class Contact extends React.Component {
                   isRequired = {true}
                   handleChange = {this.handleChange}
                 />
+                <CheckBoxes
+                  id="pronouns"
+                  label="Pronouns"
+                  isRequired={false}
+                  handleChange={this.handleChange}
+                  options={Pronouns}
+                />
+                <Dropdown
+                  id="category"
+                  label="Category"
+                  options={Categories}
+                />
+                <br/>
                 <FileUpload
                   id="profilePicture"
                   label="Profile Picture"

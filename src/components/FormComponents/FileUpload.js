@@ -13,8 +13,6 @@ const FileInput = class extends React.Component {
   render() {
     console.log(this.props);
     return (
-
-
       <div className="field">
         <div className="file">
           <label className="file-label">
