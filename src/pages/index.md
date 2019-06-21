@@ -3,17 +3,18 @@ templateKey: index-page
 title: Queer Healers
 image: /img/botanical-close-up-color-1418329.jpg
 heading: Healers with a conscience
-subheading: Find healers who relate to your lived experience
+subheading: Find healers who affirm your lived experience
 mainpitch:
   title: Why Queer Healers
-  description: >-
-    Find highly-skilled queer healers of diverse identities, modalities, and
-    backgrounds. 
+  description: >
+    Find highly-skilled queer healers of diverse identities and backgrounds
+    working within a wide variety of healing practices and modalities
 description: >-
   Think body, esoteric, and ritual workers, doulas, herbalists, coaches, etc.
-  Instead of sifting through years of posts on your city’s Queer Exchange group,
-  or going down a hashtag rabbit hole on Instagram, browse modalities, read
-  reviews, and book appointments with any queer healer worth their salt (ahem).
+  Instead of sifting through years of un-updated posts on your city’s Queer
+  Exchange group, or going down a hashtag rabbit hole on Instagram, browse
+  modalities, read reviews, and book appointments with queer healers whose
+  wisdom and experience speaks to your personal needs.
 intro:
   blurbs: []
   heading: What we offer
